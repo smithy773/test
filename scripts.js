@@ -13,7 +13,7 @@ submitter.addEventListener('click', async (event) => {
   formData.append('file', gifFile.files[0]);
 
   try {
-    const response = await fetch('http://upload.giphy.com/v1/gifs', {
+    const response = await fetch('https://upload.giphy.com/v1/gifs', {
       method: 'POST',
       headers: { Authorization: `Bearer: ${apiKey}` },
       body: formData,
